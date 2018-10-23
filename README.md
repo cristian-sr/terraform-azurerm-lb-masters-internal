@@ -26,8 +26,8 @@ module "lb-masters-internal" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | cluster_name | Name of the DC/OS cluster | string | - | yes |
-| location | Azure location | string | - | yes |
-| resource_group_name | resource group name | string | - | yes |
+| location | Azure Region | string | - | yes |
+| resource_group_name | Name of the azure resource group | string | - | yes |
 | subnet_id | Subnet ID | string | - | yes |
 | tags | Add custom tags to all resources | map | `<map>` | no |
 
