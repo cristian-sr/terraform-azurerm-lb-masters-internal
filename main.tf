@@ -11,7 +11,7 @@
  *```hcl
  * module "lb-masters-internal" {
  *   source  = "dcos-terraform/lb-masters-internal/azurerm"
- *   version = "~> 0.1"
+ *   version = "~> 0.1.0"
  *
  *   cluster_name = "production"
  *
