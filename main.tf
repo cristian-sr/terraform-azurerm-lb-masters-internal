@@ -33,6 +33,9 @@ module "masters-internal" {
   location            = "${var.location}"
   resource_group_name = "${var.resource_group_name}"
 
+  instance_nic_ids       = ["${var.instance_nic_ids}"]
+  ip_configuration_names = ["${var.ip_configuration_names}"]
+
   lb_name_format = "int-%[1]s"
 
   providers = {
@@ -60,6 +63,8 @@ module "masters-internal" {
 
   internal  = true
   subnet_id = "${var.subnet_id}"
+
+  num = "${var.num}"
 
   tags = "${var.tags}"
 }
