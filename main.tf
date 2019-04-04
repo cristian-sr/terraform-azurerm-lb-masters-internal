@@ -11,7 +11,7 @@
  *```hcl
  * module "lb-masters-internal" {
  *   source  = "dcos-terraform/lb-masters-internal/azurerm"
- *   version = "~> 0.1.0"
+ *   version = "~> 0.2.0"
  *
  *   cluster_name = "production"
  *
@@ -26,7 +26,7 @@ provider "azurerm" {}
 
 module "masters-internal" {
   source  = "dcos-terraform/lb/azurerm"
-  version = "~> 0.1.0"
+  version = "~> 0.2.0"
 
   cluster_name = "${var.cluster_name}"
 
