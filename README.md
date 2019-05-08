@@ -20,21 +20,20 @@ module "lb-masters-internal" {
 }
 ```
 
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| cluster_name | Name of the DC/OS cluster | string | - | yes |
-| location | Azure Region | string | - | yes |
-| resource_group_name | Name of the azure resource group | string | - | yes |
-| subnet_id | Subnet ID | string | - | yes |
+| cluster\_name | Name of the DC/OS cluster | string | n/a | yes |
+| location | Azure Region | string | n/a | yes |
+| resource\_group\_name | Name of the azure resource group | string | n/a | yes |
+| subnet\_id | Subnet ID | string | n/a | yes |
 | tags | Add custom tags to all resources | map | `<map>` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| backend_address_pool | Public backend address pool ID |
-| lb_address | LB Address |
+| backend\_address\_pool | backend address pool |
+| lb\_address | lb address |
 
