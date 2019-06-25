@@ -30,7 +30,11 @@ variable "subnet_id" {
   description = "Subnet ID"
 }
 
-# Number of Instance
 variable "num" {
   description = "How many instances should be created"
+}
+
+variable "name_prefix" {
+  description = "Name Prefix"
+  default     = ""
 }
