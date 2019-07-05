@@ -15,10 +15,6 @@ variable "instance_nic_ids" {
   type        = "list"
 }
 
-variable "hostname_format" {
-  description = "Format the hostname inputs are index+1, region, cluster_name"
-}
-
 variable "tags" {
   description = "Add custom tags to all resources"
   type        = "map"
