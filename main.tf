@@ -55,6 +55,9 @@ module "masters-internal" {
     {
       frontend_port = 8080
     },
+    {
+      frontend_port = "${var.adminrouter_grpc_proxy_port}"
+    },
   ]
 
   probe {
