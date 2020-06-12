@@ -27,7 +27,7 @@ provider "azurerm" {
 
 module "masters-internal" {
   source  = "dcos-terraform/lb/azurerm"
-  version = "~> 0.2.0"
+  version = "~> 0.3.0"
 
   cluster_name = var.cluster_name
   name_prefix  = var.name_prefix
@@ -35,7 +35,7 @@ module "masters-internal" {
   location            = var.location
   resource_group_name = var.resource_group_name
 
-  instance_nic_ids = [var.instance_nic_ids]
+  instance_nic_ids = var.instance_nic_ids
 
   lb_name_format = "int-%[1]s"
 
@@ -69,4 +69,3 @@ module "masters-internal" {
 
   tags = var.tags
 }
-
